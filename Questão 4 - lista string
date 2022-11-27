@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    
+    char nome[100];
+    char nomeMeio[100];
+    char sobrenome[100];
+    char nomeCompleto[100];
+    
+    printf("Digite seu primeiro nome: ");
+    scanf("%s", nome);
+    
+    printf("Digite seu(s) nome(s) do meio: ");
+    scanf("%s", nomeMeio);
+    
+    printf("Digite seu ultimo nome: ");
+    scanf("%s", sobrenome);
+    
+    strcpy(nomeCompleto, nome);
+    strcat(nomeCompleto, " ");
+    strcat(nomeCompleto, nomeMeio);
+    strcat(nomeCompleto, " ");
+    strcat(nomeCompleto, sobrenome);
+    
+    printf("%s", nomeCompleto);
+    
+    return 0;
+}
