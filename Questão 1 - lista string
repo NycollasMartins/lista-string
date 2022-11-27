@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+  
+  char nome[100];
+  int i;
+  int tamanho;
+  
+  printf("Digite seu nome completo:\n");
+  gets(nome);
+  
+  tamanho = strlen(nome);
+  
+  for(i=0;i<tamanho;i++)
+  {
+    if(nome[i] == ' ')
+    {
+      tamanho--;
+    }
+  }
+  
+  printf("%d", tamanho);
+  
+  return 0;
+}
