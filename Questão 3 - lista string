@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+int main() {
+    
+	char nome[50];
+    char email[50];
+    char endereco[50];
+    char backup_nome[50];
+    char backup_email[50];
+    char backup_endereco[50];
+ 
+    printf("Informe o nome completo: ");
+    gets(nome);
+    printf("Informe o e-mail: ");
+    gets(email);
+    printf("Informe o endereco: ");
+    gets(endereco);
+ 
+    strcpy(backup_nome, nome);
+    strcpy(backup_email, email);
+    strcpy(backup_endereco, endereco);
+ 
+    printf("\nNome: %s\n", backup_nome);
+    printf("E-mail: %s\n", backup_email);
+    printf("Endereco: %s\n", backup_endereco);
+ 
+return 0;
+}
