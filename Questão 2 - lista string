@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+int main() {
+    char nome[10];
+
+    printf("Digite uma cor: ");
+    scanf("%s", nome);
+
+    if(nome[0] == 'b' && nome[1] == 'r' && nome[2] == 'a' && nome[3] == 'n' && nome[4] == 'c' && nome[5] == 'o'){
+        printf("Cor valida");
+    }else if(nome[0] == 'v' && nome[1] == 'e' && nome[2] == 'r' && nome[3] == 'd' && nome[4] == 'e'){
+        printf("Cor valida");
+    }else if(nome[0] == 'a' && nome[1] == 'm' && nome[2] == 'a' && nome[3] == 'r' && nome[4] == 'e' && nome[5] == 'l' && nome[6] == 'o'){
+        printf("Cor valida");
+    }else{
+        printf("Cor invalida");
+    }
+    return 0;
+}
