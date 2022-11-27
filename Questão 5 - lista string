@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char nome[50], sobrenome[50];
+    int cpf, senha;
+
+    printf("Digite seu nome: ");
+    scanf("%s", nome);
+
+    printf("Digite seu sobrenome: ");
+    scanf("%s", sobrenome);
+
+    printf("Digite o numero do seu cpf: ");
+    scanf("%d", &cpf);
+
+    senha = nome[0]+sobrenome[0]+cpf;
+
+    printf("Sua senha de acesso é: %d", senha);
+}
